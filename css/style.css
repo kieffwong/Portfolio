@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 , h3, h4, h5, h6 {
+	font-family: "Inconsolata";
+}
+
+body {
+	background-image: url("../img/macbook.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
+header {
+	height: 750px;
+	
+}
+
+.header-title {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header-content {
+	text-transform: uppercase;
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+}
+
+.header-content h1{
+	font-size: 56px;
+	color: white;
+}
+
+
+.about-me {
+	background-color: #006400;
+}
