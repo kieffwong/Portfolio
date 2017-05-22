@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio : Vincent Yan - Front-End Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="50">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container">
-	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
@@ -19,35 +18,224 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Vincent Yan</a>
+	      <a class="navbar-brand" href="#top">Vincent Yan</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">About Me</a></li>
-	        <li><a href="#">Projects</a></li>
-	        <li><a href="#">Contact</a></li>
+	        <li><a href="#about-me">About Me</a></li>
+	        <li><a href="#projects">Projects</a></li>
+	        <li><a href="#contact">Contact</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-	<header class="text-center">
-		<div class="container header-title">
+	<header class="text-center" id="top">
+		<div class="container header-container">
 			<div class="header-content">
-				<h1>HI, I'M VINCENT</h1>
+				<h1>Vincent Yan</h1>
+				<hr class="line-break">
 				<h3>Front-End Developer</h3>
 			</div>
 		</div>
-		
 	</header>
-	<section class="about-me">
+	<section id="about-me">
 		<div class="container">
 			<div class="row text-center">
-				<h1>{About Me}</h1>
+				<h1 class="section-header">{About Me}</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-md-offset-1">
+					<img class="profile-pic" src="img/pic.jpg">
+				</div>	
+				<div class="col-md-8">
+					<p class="summary">Hello! I am a front-end developer residing in Portland, OR. I recently graduated from Udacity's Front-End Nanodegree program, which gave me even more enthusiasm in coding. I have an insatiable desire to learn and gain new skills to build bigger and more complex web applications.</p>
+					<p class="summary">In my spare time, I love playing video games, reading, finding new local restraurants to eat at and now I am learning how to cook.</p>
+				</div>
 			</div>
 		</div>
 	</section>
+	<section id="projects">
+		<div class="container">
+			<div class="row text-center">
+				<h1 class="section-header">{Projects}</h1>
+			</div>
+			<div class="row text-center project-row">
+        <div class="col-md-6">
+        	<h3 class="text-muted">Neighborhood Map</h3>
+          <img src="img/neighborhood-map.png" class="img-responsive project-image" data-toggle="modal" data-target="#project1" alt="Neighborhood Map">    
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-muted">Web Optimization Page</h3>
+          <img src="img/web-optimization.png" class="img-responsive project-image" data-toggle="modal" data-target="#project2" alt="Web Optimization">
+        </div>
+      </div>
+      <div class="row text-center project-row">
+        <div class="col-md-6">
+        	<h3 class="text-muted">Arcade Game</h3>
+          <img src="img/arcade-game.png" class="img-responsive project-image" data-toggle="modal" data-target="#project3" alt="Arcade Game">
+        </div>
+				<div class="col-md-6">
+					<h3 class="text-muted">Random Quote Machine</h3>
+					<img src="img/random-quote.png" class="img-responsive project-image" data-toggle="modal" data-target="#project4" alt="Feed Reader">
+				</div>
+      </div>
+      <div class="row text-center project-row">
+        <div class="col-md-6">
+       	  <h3 class="text-muted">Wikipedia Viewer</h3>
+          <img src="img/wikipedia.png" class="img-responsive project-image" data-toggle="modal" data-target="#project5" alt="Wikipedia Viewer">
+        </div>
+        <div class="col-md-6">
+        	<h3 class="text-muted">Weather App</h3>
+          <img src="img/weather.png" class="img-responsive project-image" data-toggle="modal" data-target="#project6" alt="Shopping List"> 
+        </div>
+      </div>
+		</div>
+	</section>
+	<footer id="contact">
+		<div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="section-header">{Contact}</h1>
+        </div>
+      </div>
+      <div class="row footer-area text-center">
+        <div class="col-md-12">
+          <a href="mailto:vincentyan1@gmail.com" class="fa fa-envelope-square icon" alt="Email"></a>
+          <a href="https://github.com/envincebal" class="fa fa-github-square icon" target="_blank" alt="Github"></a>
+          <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="fa fa-linkedin-square icon" target="_blank" alt="LinkedIn"></a>
+        </div>
+      </div>
+		</div>
+	</footer>
+
+	 <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Neighborhood Map</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="img/neighborhood-map.png">
+            <hr>
+            <p>This is a project I did as part of the Udacity Front-End Nanodegree course. I utilized the Knockout.js framework to achieve filtering of locations using a search input. Each marker location can be clicked for additional imformation.</p>
+            <p><a class="project-link" href="https://envincebal.github.io/neighborhood-map/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/neighborhood-map">View Source Code</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Web Optimization App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="img/web-optimization.png">
+            <hr>
+            <p>This is a project I did as part of the Udacity Front-End Nanodegree course. I optimized the critical rendering path of the main page to achieve a PageSpeed score of over 90. In another page, I optimized it to run at a silky smooth 60 frames per second.</p>
+            <p><a class="project-link" href="https://envincebal.github.io/web-optimization/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/web-optimization">View Source Code</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Arcade Game</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="img/arcade-game.png">
+            <hr>
+            <p>This is a project I did as part of the Udacity Front-End Nanodegree course. This is a clone of the classic Frogger game. I used an object-oriented approach in Javascript to render the player and enemies onto the page.</p>
+            <p><a class="project-link" href="http://envincebal.github.io/arcade-game/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/arcade-game">View Source Code</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Random Quote Machine</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="img/random-quote.png">
+            <hr>
+            <p>This is a personal project. This application generates a random quote by clicking a button. It also allows user to Tweet the current quote with another button.</p>
+            <p><a class="project-link" href="https://envincebal.github.io/random-quote/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/random-quote">View Source Code</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Wikipedia Viewer</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="img/wikipedia.png">
+            <hr>
+            <p>A personal project using the Wikipedia API to make AJAX calls. This app allows user to search articles and appends results onto the page.</p>
+            <p><a class="project-link" href="https://envincebal.github.io/wikipedia-app/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/wikipedia-app">View Source Code</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-div" id="project6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Weather App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="img/weather.png">
+            <hr>
+            <p>A personal project I completed. This app uses geolocation and the Dark Sky Weather API to display the user's local weather information. The user can toggle between fahrenheit and celsius.</p>
+            <p><a class="project-link" href="https://envincebal.github.io/weather-app/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/weather-app">View Source Code</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+	<script src="https://use.fontawesome.com/cefa49e3f8.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>

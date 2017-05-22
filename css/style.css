@@ -4,41 +4,155 @@
 	padding: 0;
 }
 
-h1, h2 , h3, h4, h5, h6 {
-	font-family: "Inconsolata";
+.nav.navbar-nav.navbar-right li a:hover,
+.navbar-header .navbar-brand:hover  {
+	background-color: #3E8432;
+	color: #fff;
 }
 
-body {
+h1, h2 , h3, h4, h5, h6 {
+	font-family: "Roboto";
+	text-transform: uppercase;
+}
+
+.section-header {
+	padding: 0 0 20px 0;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+img {
+	max-width: 100%;
+}
+
+section, footer {
+	padding: 30px 0;
+}
+
+header {
+	height: 100vh;
 	background-image: url("../img/macbook.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-
+	padding: 20px 0 0 0;
 }
 
-header {
-	height: 750px;
-	
-}
-
-.header-title {
+.header-container {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-}
-
-.header-content {
 	text-transform: uppercase;
 	text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+	color: #fff;
+	display: inline-block;
+	max-width: 600px;
 }
 
-.header-content h1{
-	font-size: 56px;
-	color: white;
+.header-content h1, h3, .summary {
+	font-family: Times, "Times New Roman", Georgia, serif;
 }
 
+.header-content h1 {
+	font-size: 6em;
+}
 
-.about-me {
-	background-color: #006400;
+.line-break {
+	border-top: 2px solid;
+	width: 100%;
+}
+
+.header-content h3 {
+	font-size: 3em;
+}
+
+.profile-pic {
+	border-radius: 100%;
+	border: 5px solid white;
+	max-width: 230px;
+}
+
+.summary {
+	font-size: 1.86em;
+	text-align: justify;
+}
+
+.project-image {
+	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+	transition: box-shadow 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.project-image:hover {
+	-webkit-box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.75);
+	box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.75);
+}
+
+.project-row {
+	padding: 0 0 20px 0;
+}
+
+#projects {
+	color: #006400;
+}
+
+#about-me, #contact {
+	background-color: #0B3F0B;
+	color: #fff;
+}
+
+.icon {
+	font-size: 5em !important; 
+	margin: 0 20px;
+	color: #fff;
+	outline: none;
+}
+
+a:visited,
+a:hover,
+a:link,
+a:active{
+	text-decoration: none;
+}
+
+.icon:hover {
+	color: #3E8432;
+}
+
+/** MEDIA QUERIES **/
+
+@media (max-width: 1200px) {
+	.summary {
+		font-size: 1.6em;
+
+	}
+	.profile-pic {
+		display: block;
+		margin: auto;
+	}
+}
+
+@media (max-width: 991px) {
+	.summary {
+		margin: 20px 0 0 0;
+	}
+}
+
+@media (max-width: 610px) {
+	.header-content h1 {
+		font-size: 4em;
+	}
+	.header-content h3 {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 350px) {
+	.icon {
+		font-size: 4em !important;
+	}
 }
