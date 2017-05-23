@@ -6,7 +6,7 @@
 
 .nav.navbar-nav.navbar-right li a:hover,
 .navbar-header .navbar-brand:hover  {
-	background-color: #3E8432;
+	background-color: #51320A;
 	color: #fff;
 }
 
@@ -50,7 +50,7 @@ header {
 	max-width: 600px;
 }
 
-.header-content h1, h3, .summary {
+.header-content h1, h3 {
 	font-family: Times, "Times New Roman", Georgia, serif;
 }
 
@@ -67,15 +67,25 @@ header {
 	font-size: 3em;
 }
 
+#projects {
+	color: #51320A;
+	background-color: #D5D5D5;
+}
+
+#about-me, #contact {
+	background-color: #51320A;
+	color: #D5D5D5;
+}
+
 .profile-pic {
 	border-radius: 100%;
-	border: 5px solid white;
+	border: 5px solid;
 	max-width: 230px;
 }
 
 .summary {
-	font-size: 1.67em;
-	text-align: justify;
+	font-size: 1.6em;
+	line-height: 1.3em;
 }
 
 .project-image {
@@ -96,19 +106,10 @@ header {
 	padding: 0 0 20px 0;
 }
 
-#projects {
-	color: #006400;
-}
-
-#about-me, #contact {
-	background-color: #0B3F0B;
-	color: #fff;
-}
-
 .icon {
 	font-size: 5em !important; 
 	margin: 0 20px;
-	color: #fff;
+	color: #D5D5D5;
 	outline: none;
 }
 
@@ -120,14 +121,14 @@ a:active{
 }
 
 .icon:hover {
-	color: #3E8432;
+	color: #fff;
 }
 
 /** MEDIA QUERIES **/
 
 @media (max-width: 1200px) {
 	.summary {
-		font-size: 1.44em;
+		font-size: 1.45em;
 
 	}
 	.profile-pic {
@@ -150,6 +151,16 @@ a:active{
 		font-size: 2em;
 	}
 }
+
+@media (max-width: 405px){
+	.header-content h1 {
+		font-size: 3em;
+	}
+	.header-content h3 {
+		font-size: 1.6em;
+	}
+}
+	
 
 @media (max-width: 350px) {
 	.icon {
