@@ -6,11 +6,11 @@
 
 .nav.navbar-nav.navbar-right li a:hover,
 .navbar-header .navbar-brand:hover  {
-	background-color: #51320A;
+	background-color: #3C6994;
 	color: #fff;
 }
 
-h1, h2 , h3, h4, h5, h6 {
+h1, h2 {
 	font-family: "Roboto";
 	text-transform: uppercase;
 }
@@ -50,7 +50,7 @@ header {
 	max-width: 600px;
 }
 
-.header-content h1, h3 {
+.header-content h1, h2 {
 	font-family: Times, "Times New Roman", Georgia, serif;
 }
 
@@ -63,17 +63,17 @@ header {
 	width: 100%;
 }
 
-.header-content h3 {
+.header-content h2 {
 	font-size: 3em;
 }
 
 #projects {
-	color: #51320A;
+	color: #3C6994;
 	background-color: #D5D5D5;
 }
 
 #about-me, #contact {
-	background-color: #51320A;
+	background-color: #3C6994;
 	color: #D5D5D5;
 }
 
