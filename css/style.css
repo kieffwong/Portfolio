@@ -147,7 +147,7 @@ a:active{
 	.header-content h1 {
 		font-size: 3.5em;
 	}
-	.header-content h3 {
+	.header-content h2 {
 		font-size: 2em;
 	}
 }
@@ -156,7 +156,7 @@ a:active{
 	.header-content h1 {
 		font-size: 3em;
 	}
-	.header-content h3 {
+	.header-content h2 {
 		font-size: 1.6em;
 	}
 }
