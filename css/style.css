@@ -1,4 +1,5 @@
 * {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -10,10 +11,6 @@
 	color: #fff;
 }
 
-h1, h2 {
-	font-family: "Roboto";
-	text-transform: uppercase;
-}
 
 .section-header {
 	padding: 0 0 20px 0;
@@ -31,8 +28,9 @@ section, footer {
 
 header {
 	height: 100vh;
-	background-image: url("../img/macbook.jpg");
+	background-image: url("https://github.com/envincebal/portfolio/blob/master/img/macbook.jpg?raw=true");
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -42,20 +40,24 @@ header {
 .header-container {
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	text-transform: uppercase;
 	text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
 	color: #fff;
 	display: inline-block;
-	max-width: 600px;
+	max-width: 650px;
 }
 
-.header-content h1, h2 {
+ h1, h2 {
 	font-family: Times, "Times New Roman", Georgia, serif;
+
 }
 
 .header-content h1 {
 	font-size: 6em;
+  letter-spacing: 2px;
 }
 
 .line-break {
@@ -65,6 +67,7 @@ header {
 
 .header-content h2 {
 	font-size: 3em;
+  letter-spacing: 2px;
 }
 
 #projects {
@@ -78,28 +81,30 @@ header {
 }
 
 .profile-pic {
+	-webkit-border-radius: 100%;
 	border-radius: 100%;
 	border: 5px solid;
 	max-width: 230px;
 }
 
 .summary {
-	font-size: 1.6em;
-	line-height: 1em;
-	letter-spacing: 2px;
+	font-size: 1.5em;
+	line-height: 1.3em;
 }
 
 .project-image {
 	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
 	box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+	-webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+	transition: -webkit-box-shadow 0.2s ease-in-out;
+	-o-transition: box-shadow 0.2s ease-in-out;
 	transition: box-shadow 0.2s ease-in-out;
+	transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 	cursor: pointer;
 }
 
 .project-image:hover {
 	-webkit-box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.75);
 	box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.75);
 }
 
@@ -129,7 +134,7 @@ a:active{
 
 @media (max-width: 1200px) {
 	.summary {
-		font-size: 1.45em;
+		font-size: 1.38em;
 
 	}
 	.profile-pic {
