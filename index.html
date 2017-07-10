@@ -4,46 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio : Vincent Yan - Front-End Developer</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body data-spy="scroll" data-target="#main-nav" data-offset="50">
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#top">Vincent Yan</a>
-	    </div>
-
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#about-me">About Me</a></li>
-	        <li><a href="#projects">Projects</a></li>
-	        <li><a href="#contact">Contact</a></li>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#top" id="brand">Vincent Yan</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" id="links">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
 	<header class="text-center" id="top">
-		<div class="container header-container">
+		<div class="container header-container"> 
 			<div class="header-content">
-				<h1>Vincent Yan</h1>
+				<h1 class="name">Vincent Yan</h1>
 				<hr class="line-break">
-				<h2>Front-End Developer</h2>
+				<h2 class="title">Front-End Developer</h2>
 			</div>
 		</div>
 	</header>
 	<section id="about-me">
 		<div class="container">
 			<div class="row text-center">
-				<h1 class="section-header">{About Me}</h1>
+				<h1 class="section-header">About Me</h1>
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-md-offset-1">
@@ -59,7 +60,7 @@
 	<section id="projects">
 		<div class="container">
 			<div class="row text-center">
-				<h1 class="section-header">{Projects}</h1>
+				<h1 class="section-header">Projects</h1>
 			</div>
 			<div class="row text-center project-row">
         <div class="col-md-6">
@@ -97,14 +98,14 @@
 		<div class="container">
       <div class="row text-center">
         <div class="col-md-12">
-          <h1 class="section-header">{Contact}</h1>
+          <h1 class="section-header">Contact</h1>
         </div>
       </div>
       <div class="row footer-area text-center">
         <div class="col-md-12">
-          <a href="mailto:vincentyan1@gmail.com" class="fa fa-envelope-square icon" alt="Email"></a>
-          <a href="https://github.com/envincebal" class="fa fa-github-square icon" target="_blank" alt="Github"></a>
-          <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="fa fa-linkedin-square icon" target="_blank" alt="LinkedIn"></a>
+          <a href="mailto:vincentyan1@gmail.com" class="icon" alt="Email"><i class="ion-android-mail"></i></a>
+          <a href="https://github.com/envincebal" class="icon" target="_blank" alt="Github"><i class="ion-social-github"></i></a>
+          <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="icon" target="_blank" alt="LinkedIn"><i class="ion-social-linkedin"></i></a>
         </div>
       </div>
 		</div>
