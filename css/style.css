@@ -40,7 +40,7 @@
 
 .section-header:after {
   display: block;
-  height: 5px;
+  height: 4px;
   width: 150px;
   background-color: #f44b4b;
   content: " ";
@@ -48,9 +48,9 @@
 }
 
 .name {
-  color: #3d7fbe;
+  color: #1ebc5e;
 }
-
+/*3d7fbe */
 .title {
   color: #f44b4b;
 }
@@ -60,7 +60,7 @@ img {
 }
 
 section, footer {
-	padding: 30px 0;
+  padding: 40px 0 50px 0;
 }
 
 header {
@@ -100,14 +100,14 @@ header {
   letter-spacing: 2px;
 }
 
-#projects {
-	color: #000;
-	background-color: #fff;
+#skills, #contact {
+  background-color: #1ebc5e;
+  color: #fff;
 }
 
-#about-me, #contact {
-	background-color: #3d7fbe;
-	color: #fff
+#about-me, #projects {
+
+
 }
 
 .profile-pic {
@@ -118,6 +118,10 @@ header {
 .summary {
 	font-size: 1.5em;
 	line-height: 1.3em;
+}
+
+.skills-row {
+  margin: 20px 0;
 }
 
 .project-image {
@@ -151,10 +155,6 @@ a:hover,
 a:link,
 a:active{
 	text-decoration: none;
-}
-
-.icon:hover {
-	color: #D5D5D5;
 }
 
 /** MEDIA QUERIES **/
