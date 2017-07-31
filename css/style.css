@@ -50,7 +50,7 @@
 .name {
   color: #1ebc5e;
 }
-/*3d7fbe */
+
 .title {
   color: #f44b4b;
 }
@@ -158,6 +158,7 @@ a:active{
 	.summary {
 		font-size: 1.38em;
 	}
+  
 	.profile-pic {
 		display: block;
 		margin: auto;
@@ -174,6 +175,7 @@ a:active{
 	.header-content h1 {
 		font-size: 3.5em;
 	}
+  
 	.header-content h2 {
 		font-size: 2em;
 	}
@@ -183,13 +185,14 @@ a:active{
 	.header-content h1 {
 		font-size: 2.8em;
 	}
+  
 	.header-content h2 {
 		font-size: 1.5em;
 	}
-}
-
-@media (max-width: 350px) {
-	.icon {
+  
+  .icon {
 		font-size: 4em !important;
+    margin: 0 15px;
 	}
 }
+
