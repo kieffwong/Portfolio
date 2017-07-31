@@ -50,7 +50,7 @@
 .name {
   color: #1ebc5e;
 }
-/*3d7fbe */
+
 .title {
   color: #f44b4b;
 }
@@ -192,6 +192,13 @@ a:active{
   
   .icon {
 		font-size: 4em !important;
+<<<<<<< HEAD
     margin: 15px;
 	}
 }
+=======
+    margin: 0 15px;
+	}
+}
+
+>>>>>>> gh-pages
