@@ -6,7 +6,7 @@
 	<title>Portfolio : Vincent Yan - Front-End Developer</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,9 +37,9 @@
 	<header class="text-center" id="top">
 		<div class="container header-container"> 
 			<div class="header-content">
-				<h1 class="name">Vincent Yan</h1>
+				<h1 class="name"><span class="blue">Vincent </span><span class="white">Yan</span></h1>
 				<hr class="line-break">
-				<h2 class="title">Front-End Developer</h2>
+				<h2 class="title"><span class="white">Front-End </span><span class="blue">Developer</span></h2>
 			</div>
 		</div>
 	</header>
@@ -65,18 +65,18 @@
 				<h1 class="section-header">Skillset</h1>
 			</div>
 			<div class="row text-center skills-row">
-        <i class="icon devicon-html5-plain-wordmark colored"></i>
-        <i class="icon devicon-css3-plain-wordmark colored"></i>
-        <i class="icon devicon-javascript-plain colored"></i>
+        <i class="skills-icon devicon-html5-plain-wordmark colored"></i>
+        <i class="skills-icon devicon-css3-plain-wordmark colored"></i>
+        <i class="skills-icon devicon-javascript-plain colored"></i>
      </div>
      <div class="row text-center skills-row">
-					<i class="icon devicon-jquery-plain-wordmark colored"></i>
-					<i class="icon devicon-bootstrap-plain-wordmark colored"></i>
-					<i class="icon devicon-git-plain-wordmark colored"></i>
+					<i class="skills-icon devicon-jquery-plain-wordmark colored"></i>
+					<i class="skills-icon devicon-bootstrap-plain-wordmark colored"></i>
+					<i class="skills-icon devicon-react-original-wordmark colored"></i>
      </div>
       <div class="row text-center">
         <div class="col-md-8 col-md-offset-2">
-					<p class="summary">My toolset goes beyond the basic front-end trinity of HTML, CSS and Javascript. I use Git for version control as well as front-end frameworks and libraries such as Bootstrap and jQuery. I always strive to create web experiences that are not just functional but also look good across all devices as well.</p>
+					<p class="summary">My toolset goes beyond the basic front-end trinity of HTML, CSS and Javascript. I use Git for version control as well as front-end frameworks and libraries such as Bootstrap and jQuery. Currently, I am learning React and building projects using that library. I always strive to create web experiences that are not just functional but also look good across all devices.</p>
 				</div>
       </div>
 		</div>
@@ -88,12 +88,12 @@
 			</div>
 			<div class="row text-center project-row">
         <div class="col-md-6">
-        	<h3>Neighborhood Map</h3>
-          <img src="img/neighborhood-map.png" class="img-responsive project-image" data-toggle="modal" data-target="#project1" alt="Neighborhood Map">    
+        	<h3>Markdown Previewer</h3>
+          <img src="img/markdown.png" class="img-responsive project-image" data-toggle="modal" data-target="#project1" alt="markdown previewer">    
         </div>
         <div class="col-md-6">
-          <h3>Arcade Game</h3>
-          <img src="img/arcade-game.png" class="img-responsive project-image" data-toggle="modal" data-target="#project2" alt="Arcade Game">
+          <h3>Twitch.tv App</h3>
+          <img src="img/twitch.png" class="img-responsive project-image" data-toggle="modal" data-target="#project2" alt="Twitch App">
         </div>
       </div>
       <div class="row text-center project-row">
@@ -118,19 +118,45 @@
       </div>
 		</div>
 	</section>
+	<section id="email">
+		<div class="container">
+			<div class="row text-center">
+				<h1 class="section-header">Message Me</h1>
+			</div>
+			<div class="row">
+				<div class="form">
+					<form method="POST" action="http://formspree.io/vincentyan1@gmail.com">
+           <div class="form-group">
+              <input type="text" name="name" class="form-control"  placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="_replyto" class="form-control"  placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" placeholder="Message" rows="8" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit">Submit</button>
+          </form>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer id="contact">
 		<div class="container">
       <div class="row text-center">
         <div class="col-md-12">
-          <h1 class="section-header">Contact</h1>
+          <h3 class="contact-header">Connect</h3>
         </div>
       </div>
       <div class="row footer-area text-center">
         <div class="col-md-12">
-          <a href="mailto:vincentyan1@gmail.com" class="icon" alt="Email"><i class="ion-android-mail"></i></a>
-          <a href="https://github.com/envincebal" class="icon" target="_blank" alt="Github"><i class="ion-social-github"></i></a>
-          <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="icon" target="_blank" alt="LinkedIn"><i class="ion-social-linkedin"></i></a>
+          <a href="https://www.freecodecamp.org/envincebal" class="footer-icon" alt="freeCodeCamp"><i class="fa fa-free-code-camp"></i></a>
+          <a href="https://github.com/envincebal" class="footer-icon" target="_blank" alt="Github"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="footer-icon" target="_blank" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
         </div>
+      </div>
+      <div class="row">
+        <p class="text-center copyright">Copyright © 2017 by Vincent Yan. All rights reserved.</p>
       </div>
 		</div>
 	</footer>
@@ -140,14 +166,14 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Neighborhood Map</h4>
+            <h4 class="modal-title">Markdown Previewer</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="img/neighborhood-map.png">
+            <img class="img-responsive" src="img/markdown.png">
             <hr>
-            <p>This is a project I did as part of the Udacity Front-End Nanodegree course. I utilized the Knockout.js framework to achieve filtering of locations using a search input. Each marker location can be clicked for additional imformation.</p>
-            <p><a class="project-link" href="https://envincebal.github.io/neighborhood-map/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/neighborhood-map">View Source Code</a></p>
+            <p>This is a project I did as part of the Free Code Camp curriculum. I utilized the React.js library to build this. The user can type Github-style markdown and it will be rendered on the previewer in real time</p>
+            <p><a class="project-link" href="https://envincebal.github.io/markdown-previewer/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/markdown-previewer">View Source Code</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -160,14 +186,14 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Arcade Game</h4>
+            <h4 class="modal-title">Twitch.tv App</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="img/arcade-game.png">
+            <img class="img-responsive" src="img/twitch.png">
             <hr>
-            <p>This is a project I did as part of the Udacity Front-End Nanodegree course. This is a clone of the classic Frogger game. I used an object-oriented approach in Javascript to render the player and enemies onto the page.</p>
-            <p><a class="project-link" href="http://envincebal.github.io/arcade-game/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/arcade-game">View Source Code</a></p>
+            <p>This is a project was built using the Twitch.tv API. The app displays a list of users and lets us know whether they are offline or online. If they are online, it displays the game they are currently streeming.</p>
+            <p><a class="project-link" href="https://envincebal.github.io/twitch-app/">View Demo Page</a></p>
+            <p><a class="project-link" href="https://github.com/envincebal/twitch-app">View Source Code</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
