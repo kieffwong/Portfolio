@@ -1,293 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="referrer" content="origin">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio : Vincent Yan - Front-End Developer</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta name="referrer" content="origin">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Portfolio : Vincent Yan - Front-End Developer</title>
+   <link href="https://fonts.googleapis.com/css?family=Jura:400,700" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body data-spy="scroll" data-target="#main-nav" data-offset="50">
-	<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#top" id="brand">Vincent Yan</a>
+            <a class="navbar-brand" href="#top" id="brand">Vincent Yan</a>
+         </div>
+
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="links">
+               <li><a href="#about-me">About Me</a></li>
+               <li><a href="#skills">Skillset</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
       </div>
-      
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right" id="links">
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#skills">Skillset</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+   </nav>
+
+   <header class="text-center" id="top">
+      <div class="container header-container">
+         <div class="header-content">
+            <h1 class="name"><span class="blue">Vincent </span><span class="white">Yan</span></h1>
+
+            <h2 class="title"><span class="white">Front-End </span><span class="blue">Developer</span></h2>
+         </div>
       </div>
-    </div>
-  </nav>
- 
-	<header class="text-center" id="top">
-		<div class="container header-container"> 
-			<div class="header-content">
-				<h1 class="name"><span class="blue">Vincent </span><span class="white">Yan</span></h1>
-				<hr class="line-break">
-				<h2 class="title"><span class="white">Front-End </span><span class="blue">Developer</span></h2>
-			</div>
-		</div>
-	</header>
-	<section id="about-me">
-		<div class="container">
-			<div class="row text-center">
-				<h1 class="section-header">About Me</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-md-offset-1">
-					<img class="profile-pic" src="img/pic.jpg">
-				</div>	
-				<div class="col-md-7">
-					<p class="summary">Hello! I am a front-end developer residing in Portland, OR. I recently graduated from Udacity's Front-End Nanodegree program, which gave me even more enthusiasm in coding. I am also sharpening my skills by going through the Free Code Camp curriculum. I have an insatiable desire to learn and gain new skills to build bigger and more complex web applications.</p>
-					<p class="summary">In my spare time, I love playing video games, reading, finding new local restaurants to eat at and now I am learning how to cook.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-  <section id="skills">
-		<div class="container">
-			<div class="row text-center">
-				<h1 class="section-header">Skillset</h1>
-			</div>
-			<div class="row text-center skills-row">
-        <i class="skills-icon devicon-html5-plain-wordmark colored"></i>
-        <i class="skills-icon devicon-css3-plain-wordmark colored"></i>
-        <i class="skills-icon devicon-javascript-plain colored"></i>
-     </div>
-     <div class="row text-center skills-row">
-					<i class="skills-icon devicon-jquery-plain-wordmark colored"></i>
-					<i class="skills-icon devicon-bootstrap-plain-wordmark colored"></i>
-					<i class="skills-icon devicon-react-original-wordmark colored"></i>
-     </div>
-      <div class="row text-center">
-        <div class="col-md-8 col-md-offset-2">
-					<p class="summary">My toolset goes beyond the basic front-end trinity of HTML, CSS and Javascript. I use Git for version control as well as front-end frameworks and libraries such as Bootstrap and jQuery. Currently, I am learning React and building projects using that library. I always strive to create web experiences that are not just functional but also look good across all devices.</p>
-				</div>
-      </div>
-		</div>
-	</section>
-	<section id="projects">
-		<div class="container">
-			<div class="row text-center">
-				<h1 class="section-header">Projects</h1>
-			</div>
-			<div class="row text-center project-row">
-        <div class="col-md-6">
-        	<h3>Markdown Previewer</h3>
-          <img src="img/markdown.png" class="img-responsive project-image" data-toggle="modal" data-target="#project1" alt="markdown previewer">    
-        </div>
-        <div class="col-md-6">
-          <h3>Twitch.tv App</h3>
-          <img src="img/twitch.png" class="img-responsive project-image" data-toggle="modal" data-target="#project2" alt="Twitch App">
-        </div>
-      </div>
-      <div class="row text-center project-row">
-        <div class="col-md-6">
-          <h3>Javascript Calculator</h3>
-          <img src="img/calculator.png" class="img-responsive project-image" data-toggle="modal" data-target="#project3" alt="Javascript Calculator">
-        </div>
-				<div class="col-md-6">
-					<h3>Pomodoro Clock</h3>
-					<img src="img/pomodoro-clock.png" class="img-responsive project-image" data-toggle="modal" data-target="#project4" alt="Pomodoro Clock">
-				</div>
-      </div>
-      <div class="row text-center project-row">
-        <div class="col-md-6">
-       	  <h3>Wikipedia Viewer</h3>
-          <img src="img/wikipedia.png" class="img-responsive project-image" data-toggle="modal" data-target="#project5" alt="Wikipedia Viewer">
-        </div>
-        <div class="col-md-6">
-        	<h3>Weather App</h3>
-          <img src="img/weather.png" class="img-responsive project-image" data-toggle="modal" data-target="#project6" alt="Shopping List"> 
-        </div>
-      </div>
-		</div>
-	</section>
-	<section id="email">
-		<div class="container">
-			<div class="row text-center">
-				<h1 class="section-header">Message Me</h1>
-			</div>
-			<div class="row">
-				<div class="form">
-					<form method="POST" action="http://formspree.io/vincentyan1@gmail.com">
-           <div class="form-group">
-              <input type="text" name="name" class="form-control"  placeholder="Name" required>
+   </header>
+   <section id="about-me">
+      <div class="container">
+         <div class="row text-center">
+            <h1 class="section-header">About Me</h1>
+         </div>
+         <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+               <img class="profile-pic" src="img/pic.jpg">
             </div>
-            <div class="form-group">
-              <input type="email" name="_replyto" class="form-control"  placeholder="Email" required>
+            <div class="col-md-7">
+               <p class="summary">Hello! I am a front-end developer residing in Portland, OR. I recently graduated from Udacity's Front-End Nanodegree program, which gave me even more enthusiasm in coding. I am also sharpening my skills by going through the Free Code Camp curriculum. I have an insatiable desire to learn and gain new skills to build bigger and more complex web applications.</p>
+               <p class="summary">In my spare time, I love playing video games, reading, finding new local restaurants to eat at and now I am learning how to cook.</p>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" placeholder="Message" rows="8" required></textarea>
+         </div>
+      </div>
+   </section>
+   <section id="skills">
+      <div class="container">
+         <div class="row text-center">
+            <h1 class="section-header">Skillset</h1>
+         </div>
+         <div class="row text-center skills-row">
+            <i class="skills-icon devicon-html5-plain-wordmark colored"></i>
+            <i class="skills-icon devicon-css3-plain-wordmark colored"></i>
+            <i class="skills-icon devicon-javascript-plain colored"></i>
+         </div>
+         <div class="row text-center skills-row">
+            <i class="skills-icon devicon-jquery-plain-wordmark colored"></i>
+            <i class="skills-icon devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="skills-icon devicon-react-original-wordmark colored"></i>
+         </div>
+         <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2">
+               <p class="summary">My toolset goes beyond the basic front-end trinity of HTML, CSS and Javascript. I use Git for version control as well as front-end frameworks and libraries such as Bootstrap and jQuery. Currently, I am learning React and building projects using that library. I always strive to create web experiences that are not just functional but also look good across all devices.</p>
             </div>
-            <button type="submit" class="btn btn-primary submit">Submit</button>
-          </form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer id="contact">
-		<div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h3 class="contact-header">Connect</h3>
-        </div>
+         </div>
       </div>
-      <div class="row footer-area text-center">
-        <div class="col-md-12">
-          <a href="https://www.freecodecamp.org/envincebal" class="footer-icon" alt="freeCodeCamp"><i class="fa fa-free-code-camp"></i></a>
-          <a href="https://github.com/envincebal" class="footer-icon" target="_blank" alt="Github"><i class="fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="footer-icon" target="_blank" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
-        </div>
-      </div>
-      <div class="row">
-        <p class="text-center copyright">Copyright © 2017 by Vincent Yan. All rights reserved.</p>
-      </div>
-		</div>
-	</footer>
+   </section>
+   <section id="projects">
+      <div class="container">
+         <div class="row text-center">
+            <h1 class="section-header">Projects</h1>
+         </div>
+         <div class="row text-center project-row">
+            <div class="col-md-6">
 
-	 <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Markdown Previewer</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="img/markdown.png">
-            <hr>
-            <p>This is a project I did as part of the Free Code Camp curriculum. I utilized the React.js library to build this. The user can type Github-style markdown and it will be rendered on the previewer in real time</p>
-            <p><a class="project-link" href="https://envincebal.github.io/markdown-previewer/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/markdown-previewer">View Source Code</a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+               <div class="img-container">
+                  <a href="https://envincebal.github.io/markdown-previewer/" target="_blank">
+                    <img src="img/markdown.png" class="img-responsive project-image" data-toggle="modal" data-target="#project1" alt="markdown previewer">
+                  <div class="textbox">
+                     <div class="text">
+                        <h4>Markdown Previewer</h4>
+                        <p>This app was built using React. Github-style markdown is rendered in real time as you type.</p>
+                     </div>
+                  </div>
+                 </a>
+               </div>
+            </div>
+            <div class="col-md-6">
 
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Twitch.tv App</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="img/twitch.png">
-            <hr>
-            <p>This is a project was built using the Twitch.tv API. The app displays a list of users and lets us know whether they are offline or online. If they are online, it displays the game they are currently streeming.</p>
-            <p><a class="project-link" href="https://envincebal.github.io/twitch-app/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/twitch-app">View Source Code</a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+               <div class="img-container">
+                  <a href="https://envincebal.github.io/twitch-app/" target="_blank">
+                    <img src="img/twitch.png" class="img-responsive project-image" data-toggle="modal" data-target="#project2" alt="Twitch App">
+                  <div class="textbox">
+                    <div class="text">
+                       <h4>Twitch.tv App</h4>
+                     <p>See who is online and what they are currently playing on Twitch.tv!</p>
+                    </div>
+                  </div>
+                 </a>
 
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Javascript Calculator</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="img/calculator.png">
-            <hr>
-            <p>This is a personal project. It is a calculator app in which the logic is built in Javascript. The user can do arithmetic evaluations for both integers and floating numbers</p>
-            <p><a class="project-link" href="https://envincebal.github.io/calculator/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/calculator/">View Source Code</a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+               </div>
+            </div>
+         </div>
+         <div class="row text-center project-row">
+            <div class="col-md-6">
 
-    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Pomodoro Clock</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="img/pomodoro-clock.png">
-            <hr>
-            <p>This is a personal project. This application lets the user set work or break minutes and the clock counts down between work and break sessions.</p>
-            <p><a class="project-link" href="https://envincebal.github.io/pomodoro-clock/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/pomodoro-clock">View Source Code</a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+               <div class="img-container">
+                  <a href="https://envincebal.github.io/calculator/" target="_blank">
+                    <img src="img/calculator.png" class="img-responsive project-image" data-toggle="modal" data-target="#project3" alt="Javascript Calculator">
+                  <div class="textbox">
+                    <div class="text">
+                       <h4>Calculator App</h4>
+                     <p>It is a calculator app....used to calculate things. Enough said.</p>
+                    </div>
+                  </div>
+                 </a>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="img-container">
+                  <a href="https://envincebal.github.io/pomodoro-clock/" target="_blank">
+                    <img src="img/pomodoro-clock.png" class="img-responsive project-image" data-toggle="modal" data-target="#project4" alt="Pomodoro Clock">
+                  <div class="textbox">
+                    <div class="text">
+                       <h4 class="text">Pomodoro Clock</h4>
+                       <p>Helps increase your productivity with this pomodoro clock and stay on task.</p>
+                    </div>
+                  </div>
+                 </a>
+               </div>
+            </div>
+         </div>
+         <div class="row text-center project-row">
+            <div class="col-md-6">
+               <div class="img-container">
+                  <a href="https://envincebal.github.io/wikipedia-app/" target="_blank">
+                     <img src="img/wikipedia.png" class="img-responsive project-image" data-toggle="modal" data-target="#project5" alt="Wikipedia Viewer">
+                     <div class="textbox">
+                        <div class="text">
+                           <h4>Wikipedia Viewer</h4>
+                           <p>Check out all the cool articles with this Wikipedia viewer!</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-6">
 
-    
-
-    <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Wikipedia Viewer</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="img/wikipedia.png">
-            <hr>
-            <p>A personal project using the Wikipedia API to make AJAX calls. This app allows user to search articles and appends results onto the page.</p>
-            <p><a class="project-link" href="https://envincebal.github.io/wikipedia-app/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/wikipedia-app">View Source Code</a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+               <div class="img-container">
+                  <a href="https://envincebal.github.io/weather-app/" target="_blank">
+                    <img src="img/weather.png" class="img-responsive project-image" data-toggle="modal" data-target="#project6" alt="Shopping List">
+                  <div class="textbox">
+                    <div class="text">
+                       <h4>Weather App</h4>
+                       <p>Snow? Sun? Rain? You can find out using this handy weather app.</p>
+                    </div>
+                  </div>
+                 </a>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-
-    <div class="modal fade modal-div" id="project6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Weather App</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="img/weather.png">
-            <hr>
-            <p>A personal project I completed. This app uses geolocation and the Dark Sky Weather API to display the user's local weather information. The user can toggle between fahrenheit and celsius.</p>
-            <p><a class="project-link" href="https://envincebal.github.io/weather-app/">View Demo Page</a></p>
-            <p><a class="project-link" href="https://github.com/envincebal/weather-app">View Source Code</a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+   </section>
+   <section id="email">
+      <div class="container">
+         <div class="row text-center">
+            <h1 class="section-header">Message Me</h1>
+         </div>
+         <div class="row">
+            <div class="form">
+               <form method="POST" action="http://formspree.io/vincentyan1@gmail.com">
+                  <div class="form-group">
+                     <input type="text" name="name" class="form-control" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                     <input type="email" name="_replyto" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                     <textarea class="form-control" name="message" placeholder="Message" rows="8" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary submit">Submit</button>
+               </form>
+            </div>
+         </div>
       </div>
-    </div>
-    
-	<script src="https://use.fontawesome.com/cefa49e3f8.js"></script>
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="js/app.js"></script>
+   </section>
+   <footer id="contact">
+      <div class="container">
+         <div class="row text-center">
+            <div class="col-md-12">
+               <h3 class="contact-header">Connect</h3>
+            </div>
+         </div>
+         <div class="row footer-area text-center">
+            <div class="col-md-12">
+               <a href="https://www.freecodecamp.org/envincebal" class="footer-icon" alt="freeCodeCamp"><i class="fa fa-free-code-camp"></i></a>
+               <a href="https://github.com/envincebal" class="footer-icon" target="_blank" alt="Github"><i class="fa fa-github"></i></a>
+               <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="footer-icon" target="_blank" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+         </div>
+         <div class="row">
+            <p class="text-center copyright">Copyright © 2017 by Vincent Yan. All rights reserved.</p>
+         </div>
+      </div>
+   </footer>
+   <script src="https://use.fontawesome.com/cefa49e3f8.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <script src="js/app.js"></script>
 </body>
+
 </html>
