@@ -67,43 +67,28 @@ header {
 }
 
 .header-container {
-   position: relative;
+   position: absolute;
    top: 50%;
-   -ms-transform: translateY(-50%);
-   -webkit-transform: translateY(-50%);
-   transform: translateY(-50%);
+   left: 50%;
+   transform: translate(-50%, -50%);
    text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
-   max-width: 650px;
-   display: inline-block;
+   width: 100%;
+   color: #fff;
 }
 
 .name {
-   color: #337AB7;
-   font-size: 6em;
-   letter-spacing: 2px;
-}
-
-.name:after {
-   display: block;
-   height: 3px;
-   width: 300px;
-   background-color: #fff;
-   content: " ";
-   margin: 10px auto;
+   font-size: 4em;
+   letter-spacing: 10px;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 
 .title {
-   font-size: 3em;
+   font-size: 2em;
    letter-spacing: 2px;
+   font-weight: 700;
 }
 
-.blue {
-   color: #337AB7;
-}
-
-.white {
-   color: #fff;
-}
 
 #about-me,
 #projects,
@@ -247,6 +232,7 @@ a:active {
 @media (max-width: 610px) {
    .header-content h1 {
       font-size: 3.5em;
+      letter-spacing: 4px;
    }
 
    .header-content h2 {
@@ -272,7 +258,7 @@ a:active {
 
 @media (max-width: 405px) {
    .header-content h1 {
-      font-size: 2.8em;
+      font-size: 2.5em;
    }
 
    .header-content h2 {
