@@ -2,228 +2,384 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="referrer" content="origin">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Portfolio : Vincent Yan - Front-End Developer</title>
-   <link href="https://fonts.googleapis.com/css?family=Jura:400,700" rel="stylesheet">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-   <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kieff Wong - Full Stack Developer</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	
+	<!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+	<link rel="stylesheet" href="build/css/style.css">
 </head>
 
-<body data-spy="scroll" data-target="#main-nav" data-offset="50">
-   <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-            <a class="navbar-brand" href="#top" id="brand">Vincent Yan</a>
-         </div>
+<body>
+	<header id="home" class="header-section">
+		<nav class="navbar">
+			<div class="nav-wrapper">
+				<a href="#home" class="nav-icon">
+					<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+				</a>
+				<a class="menu-toggle">
+					<i class="menu-icon fa fa-bars fa-2x" aria-hidden="true"></i>
+				</a>
+				<ul class="nav-links mobile-menu">
+					<li class="link-item">
+						<a href="#about-me">About Me</a>
+					</li>
+				
+					<li class="link-item">
+						<a href="#projects">Projects</a>
+					</li>
+					<li class="link-item">
+						<a href="#contact">Say Hello</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right" id="links">
-               <li><a href="#about-me">About Me</a></li>
-               <li><a href="#skills">Skillset</a></li>
-               <li><a href="#projects">Projects</a></li>
-               <li><a href="#contact">Contact</a></li>
-            </ul>
-         </div>
-      </div>
-   </nav>
+		<div id="about-me" class="title-container" >
+				<img class="section-img" src="build/img/kieff.jpg" alt="">
+			<p class="type"> Nice to meet you! I am <span style="color: #eb3486">Kieff Wong.</span></p>
+			<h3>I am full stack developer who have serious passion for Web apps and many years experience on Web Design.<br/>
+			Please feel Free to reach out and collaborate.</h3>
+		</div>
+		<a href="#" class="projects-arrow js-scroll-projects">
+			<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
+		</a>
 
-   <header class="text-center" id="top">
-      <div class="container header-container">
-         <div class="header-content">
-            <h1 class="name">Vincent Yan</h1>
-            <h2 class="title">Front-End Developer</h2>
-         </div>
-      </div>
-   </header>
-   <section id="about-me">
-      <div class="container">
-         <div class="row text-center">
-            <h1 class="section-header">About Me</h1>
-         </div>
-         <div class="row">
-            <div class="col-md-3 col-md-offset-1">
-               <img class="profile-pic" src="img/pic.jpg">
-            </div>
-            <div class="col-md-7">
-               <p class="summary">Hello! I am a front-end developer residing in Portland, OR. I recently graduated from Udacity's Front-End Nanodegree program, which gave me even more enthusiasm in coding. I am also sharpening my skills by going through the Free Code Camp curriculum. I have an insatiable desire to learn and gain new skills to build bigger and more complex web applications.</p>
-               <p class="summary">In my spare time, I love playing video games, reading, finding new local restaurants to eat at and now I am learning how to cook.</p>
-            </div>
-         </div>
-      </div>
-   </section>
-   <section id="skills">
-      <div class="container">
-         <div class="row text-center">
-            <h1 class="section-header">Skillset</h1>
-         </div>
-         <div class="row text-center skills-row">
-            <i class="skills-icon devicon-html5-plain-wordmark colored"></i>
-            <i class="skills-icon devicon-css3-plain-wordmark colored"></i>
-            <i class="skills-icon devicon-javascript-plain colored"></i>
-         </div>
-         <div class="row text-center skills-row">
-            <i class="skills-icon devicon-jquery-plain-wordmark colored"></i>
-            <i class="skills-icon devicon-bootstrap-plain-wordmark colored"></i>
-            <i class="skills-icon devicon-react-original-wordmark colored"></i>
-         </div>
-         <div class="row text-center">
-            <div class="col-md-8 col-md-offset-2">
-               <p class="summary">My toolset goes beyond the basic front-end trinity of HTML, CSS and Javascript. I use Git for version control as well as front-end frameworks and libraries such as Bootstrap and jQuery. Currently, I am learning React and building projects using that library. I always strive to create web experiences that are not just functional but also look good across all devices.</p>
-            </div>
-         </div>
-      </div>
-   </section>
-   <section id="projects">
-      <div class="container">
-         <div class="row text-center">
-            <h1 class="section-header">Projects</h1>
-         </div>
-         <div class="row text-center project-row">
-            <div class="col-md-6">
+	</header>
 
-               <div class="img-container">
-                  <a href="https://envincebal.github.io/markdown-previewer/" target="_blank">
-                    <img src="img/markdown.png" class="img-responsive project-image" data-toggle="modal" data-target="#project1" alt="markdown previewer">
-                  <div class="textbox">
-                     <div class="text">
-                        <h4>Markdown Previewer</h4>
-                        <p>This app was built using React. Github-style markdown is rendered in real time as you type.</p>
-                     </div>
-                  </div>
-                 </a>
-               </div>
-            </div>
-            <div class="col-md-6">
 
-               <div class="img-container">
-                  <a href="https://envincebal.github.io/twitch-app/" target="_blank">
-                    <img src="img/twitch.png" class="img-responsive project-image" data-toggle="modal" data-target="#project2" alt="Twitch App">
-                  <div class="textbox">
-                    <div class="text">
-                       <h4>Twitch.tv App</h4>
-                     <p>See who is online and what they are currently playing on Twitch.tv!</p>
-                    </div>
-                  </div>
-                 </a>
+	<section id="skills" class="skills-section">
+		<div class="section-container">
+			<h2 class="section-title">Proficiency</h2>
+			<div class="icon-row">
+				<img class="tool-icon" src="build/img/html.png" alt="HTML">
+				<img class="tool-icon" src="build/img/css.png" alt="CSS">
+				<img class="tool-icon" src="build/img/javascript.png" alt="JavaScript">
+			</div>
+			<div class="icon-row">
+				<img class="tool-icon" src="build/img/bootstrap.png" alt="Bootstrap">
+				<img class="tool-icon" src="build/img/sass.png" alt="SASS">
+				<img class="tool-icon" src="build/img/node.png" alt="NodeJS">
+			</div>
+			<div class="icon-row">
+				<img class="tool-icon" src="build/img/mongodb.png" alt="mongDB">
+				<img class="tool-icon" src="build/img/sql.svg" alt="SQL">
+				<img class="tool-icon" src="build/img/python.png" alt="Python">
+			</div>
+			<div class="icon-row">
+				<img class="tool-icon" src="build/img/php.png" alt="Php">
+				<img class="tool-icon" src="build/img/vue.png" alt="VUE">
+				<img class="tool-icon" src="build/img/react.png" alt="React">
+			</div>
+			<p>i am proficient in both front and back end coding. I help clients designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms.</p>
+		</div>
 
-               </div>
-            </div>
-         </div>
-         <div class="row text-center project-row">
-            <div class="col-md-6">
-
-               <div class="img-container">
-                  <a href="https://envincebal.github.io/calculator/" target="_blank">
-                    <img src="img/calculator.png" class="img-responsive project-image" data-toggle="modal" data-target="#project3" alt="Javascript Calculator">
-                  <div class="textbox">
-                    <div class="text">
-                       <h4>Calculator App</h4>
-                     <p>It is a calculator app....used to calculate things. Enough said.</p>
-                    </div>
-                  </div>
-                 </a>
-               </div>
-            </div>
-            <div class="col-md-6">
-               <div class="img-container">
-                  <a href="https://envincebal.github.io/pomodoro-clock/" target="_blank">
-                    <img src="img/pomodoro-clock.png" class="img-responsive project-image" data-toggle="modal" data-target="#project4" alt="Pomodoro Clock">
-                  <div class="textbox">
-                    <div class="text">
-                       <h4 class="text">Pomodoro Clock</h4>
-                       <p>Helps increase your productivity with this pomodoro clock and stay on task.</p>
-                    </div>
-                  </div>
-                 </a>
-               </div>
-            </div>
-         </div>
-         <div class="row text-center project-row">
-            <div class="col-md-6">
-               <div class="img-container">
-                  <a href="https://envincebal.github.io/wikipedia-app/" target="_blank">
-                     <img src="img/wikipedia.png" class="img-responsive project-image" data-toggle="modal" data-target="#project5" alt="Wikipedia Viewer">
-                     <div class="textbox">
-                        <div class="text">
-                           <h4>Wikipedia Viewer</h4>
-                           <p>Check out all the cool articles with this Wikipedia viewer!</p>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-            </div>
-            <div class="col-md-6">
-
-               <div class="img-container">
-                  <a href="https://envincebal.github.io/weather-app/" target="_blank">
-                    <img src="img/weather.png" class="img-responsive project-image" data-toggle="modal" data-target="#project6" alt="Shopping List">
-                  <div class="textbox">
-                    <div class="text">
-                       <h4>Weather App</h4>
-                       <p>Snow? Sun? Rain? You can find out using this handy weather app.</p>
-                    </div>
-                  </div>
-                 </a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <section id="email">
-      <div class="container">
-         <div class="row text-center">
-            <h1 class="section-header">Message Me</h1>
-         </div>
-         <div class="row">
-            <div class="form">
-               <form method="POST" action="http://formspree.io/vincentyan1@gmail.com">
-                  <div class="form-group">
-                     <input type="text" name="name" class="form-control" placeholder="Name" required>
-                  </div>
-                  <div class="form-group">
-                     <input type="email" name="_replyto" class="form-control" placeholder="Email" required>
-                  </div>
-                  <div class="form-group">
-                     <textarea class="form-control" name="message" placeholder="Message" rows="8" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary submit">Submit</button>
-               </form>
-            </div>
-         </div>
-      </div>
-   </section>
-   <footer id="contact">
-      <div class="container">
-         <div class="row text-center">
-            <div class="col-md-12">
-               <h3 class="contact-header">Connect</h3>
-            </div>
-         </div>
-         <div class="row footer-area text-center">
-            <div class="col-md-12">
-               <a href="https://www.freecodecamp.org/envincebal" class="footer-icon" alt="freeCodeCamp"><i class="fa fa-free-code-camp"></i></a>
-               <a href="https://github.com/envincebal" class="footer-icon" target="_blank" alt="Github"><i class="fa fa-github"></i></a>
-               <a href="https://www.linkedin.com/in/vincent-yan-0a723737" class="footer-icon" target="_blank" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
-            </div>
-         </div>
-         <div class="row">
-            <p class="text-center copyright">Copyright © 2017 by Vincent Yan. All rights reserved.</p>
-         </div>
-      </div>
-   </footer>
-   <script src="https://use.fontawesome.com/cefa49e3f8.js"></script>
-   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-   <script src="js/app.js"></script>
+	</section>
+	<section id="projects" class="project-section js-projects-section">
+		<div class="project-container">
+			<h2 class="section-title">Projects</h2>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://tetris-react-game.netlify.com/" target="_blank">
+						<img class="project-img" src="build/img/tetristhum.PNG" alt="Tetris">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Tetris Game</strong>
+					</h2>
+					<a href="https://tetris-react-game.netlify.com/" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://github.com/kieffwong/react-tetris" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Game Development with React Hooks</p>
+					<ul class="tech-list">
+						<li>React</li>
+						<li>Netlify</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://books-finder.netlify.com/" target="_blank">
+						<img class="project-img" src="build/img/bookfinder.PNG" alt="Book-Finder">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Book Finder</strong>
+					</h2>
+					<a href="https://books-finder.netlify.com/" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://github.com/kieffwong/book-finder" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Full Stack with API </p>
+					<ul class="tech-list">
+						<li>Google Book Api</li>
+						<li>React</li>
+						<li>Netlify</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://dragon-ball-memory-game.netlify.com/" target="_blank">
+						<img class="project-img" src="build/img/dragonball.PNG" alt="Memory Game">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Dragon Ball Memory Game</strong>
+					</h2>
+					<a href="https://dragon-ball-memory-game.netlify.com/" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://github.com/kieffwong/Dragon-Ball-Memory-Game" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Vanila Javascript Game</p>
+					<ul class="tech-list">
+						<li>HTML / CSS</li>
+						<li>Javascript</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://www.figma.com/proto/dC52ONwKP30Q7MH3mRYlFZ/Betcha!?node-id=1%3A2&scaling=min-zoom" target="_blank">
+						<img class="project-img" src="build/img/betcha.png" alt="betcha">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Challenges(Ongoing)</strong>
+					</h2>
+					<a href="https://www.figma.com/proto/dC52ONwKP30Q7MH3mRYlFZ/Betcha!?node-id=1%3A2&scaling=min-zoom" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://github.com/chingu-voyages/v12-bears-team-04" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Full Stack Team Project(Chingu)</p>
+					<ul class="tech-list">
+						<li>Bootstrap</li>
+						<li>React</li>
+						<li>Node.js</li>
+						<li>Express.js</li>
+						<li>Firebase</li>
+						<li>Figma</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://github.com/kieffwong/Ireland-Travel" target="_blank">
+						<img class="project-img" src="build/img/irelandtravel.PNG" alt="Ireland Travel">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Travel Agency</strong>
+					</h2>
+					<a href="https://github.com/kieffwong/Ireland-Travel" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://github.com/kieffwong/Ireland-Travel" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Vue with Nuxt & CircleCI</p>
+					<ul class="tech-list">
+						<li>Bootstrap</li>
+						<li>Vue</li>
+						<li>Nuxt</li>
+						<li>CircleCI</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://codepen.io/kieff/pen/drovxW" target="_blank">
+						<img class="project-img" src="build/img/drum.PNG" alt="Drum-Machine">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Drum Machine</strong>
+					</h2>
+					<a href="https://codepen.io/kieff/pen/drovxW" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href=" " target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Press key to trigger the Drum machine</p>
+					<ul class="tech-list">
+						<li>HTML / CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="" target="_blank">
+						<img class="project-img" src="build/img/exercise.png" alt="Exercise-Tracker">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Exercise Tracker</strong>
+					</h2>
+					<a href="" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>A MERN stack app for Exercise tracker</p>
+					<ul class="tech-list">
+						<li>HTML / CSS</li>
+						<li>Bootstrap</li>
+						<li>React</li>
+						<li>Node.js</li>
+						<li>Express.js</li>
+						<li>MongoDB</li>
+						<li>Mongoose</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://codepen.io/kieff/pen/rXqzYa?editors=0010" target="_blank">
+						<img class="project-img" src="build/img/chol.PNG" alt="Choropleth-Map">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Data Visualization With A Choropleth Map</strong>
+					</h2>
+					<a href="https://codepen.io/kieff/pen/rXqzYa?editors=0010" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Search Education level in US.</p>
+					<ul class="tech-list">
+						<li>HTML / CSS</li>
+						<li>JavaScript</li>
+						<li>d3</li>
+						<li>Api</li>
+						<li>Jquery</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://codepen.io/kieff/pen/YBRdXN" target="_blank">
+						<img class="project-img" src="build/img/quote.PNG" alt="Quote Machine">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Motivational Quote Machine</strong>
+					</h2>
+					<a href="" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Built using Vanila Javascript. Get random motivation quote to boost you up!</p>
+					<ul class="tech-list">
+						<li>HTML / CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://codepen.io/kieff/pen/wOYwqm" target="_blank">
+						<img class="project-img" src="build/img/pomodoro-clock.png" alt="Podomodoro-clock">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Pomodoro Clock</strong>
+					</h2>
+					<a href="https://codepen.io/kieff/pen/wOYwqm" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Set your exercise section and break time with this pomodoro clock!</p>
+					<ul class="tech-list">
+						<li>HTML / CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="contact-section">
+		<div class="section-container">
+			<h2 class="section-title">Say Hello</h2>
+			<p>Want to collaborate? Drop me a message!</p>
+			<div class="form">
+				<form method="POST" action="https://formspree.io/kieffwong@gmail.com">
+					<div class="form-group">
+						<input type="text" name="name" class="form-control input-name" placeholder="Name" required>
+					</div>
+					<div class="form-group">
+						<input type="email" name="_replyto" class="form-control input-email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control input-textarea" name="message" placeholder="Message" rows="8"
+							required></textarea>
+					</div>
+					<button class="form-submit">Submit</button>
+				</form>
+			</div>
+			<br/>
+			<a href="https://www.freecodecamp.org/kieffwong" target="_blank">
+				<i class="fcc-icon fa fa-free-code-camp fa-3x" aria-hidden="true"></i>
+			</a>
+			<a href="https://github.com/kieffwong" target="_blank">
+				<i class="github-icon fa fa-github-alt fa-3x" aria-hidden="true"></i>
+				<a href="https://www.linkedin.com/in/kieffwong/" target="_blank">
+					<i class="linkedin-icon fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+				</a>
+		</div>
+	</section>
+	<div class="footer-border"></div>
+	<footer>
+		<h4 class="copyright"></h4>
+	</footer>
+	<script src="https://use.fontawesome.com/cefa49e3f8.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="build/js/jquery.waypoints.min.js"></script>
+	<script src="build/js/main.js"></script>
 </body>
 
 </html>
