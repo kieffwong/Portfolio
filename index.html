@@ -11,6 +11,8 @@
 	<!-- FontAwesome JS -->
     <script defer src="assets/fontawesome/js/all.js"></script>
 	<link rel="stylesheet" href="build/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./dark-mode-switch/dark-mode.css">
 </head>
 
 <body>
@@ -39,11 +41,17 @@
 		</nav>
 
 		<div id="about-me" class="title-container" >
-				<img class="section-img" src="build/img/kieff.jpg" alt="">
+				<img class="section-img" src="build/img/kieff.jpg"  alt="">
 			<p class="type"> Nice to meet you! I am <span style="color: #eb3486">Kieff Wong.</span></p>
 			<h3>I am full stack developer who have serious passion for Web apps and many years experience on Web Design.<br/>
 			Please feel Free to reach out and collaborate.</h3>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="darkSwitch" />
+				<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+			  </div>
+			  <script src="./dark-mode-switch/dark-mode-switch.min.js"></script>
 		</div>
+		
 		<a href="#" class="projects-arrow js-scroll-projects">
 			<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
 		</a>
@@ -81,6 +89,121 @@
 	<section id="projects" class="project-section js-projects-section">
 		<div class="project-container">
 			<h2 class="section-title">Projects</h2>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://btedu.co" target="_blank">
+						<img class="project-img" src="build/img/btedu.PNG" alt="Billion Trust">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Education Site</strong>
+					</h2>
+					<a href="https://btedu.co/" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://btedu.co" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Full functional Website </p>
+					<ul class="tech-list">
+						<li>Html</li>
+						<li>Css</li>
+						<li>Bootstrap</li>
+						<li>Javascript</li>
+						<li>Siteground</li>
+						<li>Chat Bot</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://irishskydigital.com/" target="_blank">
+						<img class="project-img" src="build/img/skydigital.PNG" alt="Irish Sky Digital">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>IT Comapny</strong>
+					</h2>
+					<a href="https://irishskydigital.com/" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://irishskydigital.com/" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Web Design Website </p>
+					<ul class="tech-list">
+						<li>Html</li>
+						<li>Css</li>
+						<li>Bootstrap</li>
+						<li>Javascript</li>
+						<li>Siteground</li>
+						<li>Chat Bot</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://btedu.co/greatwedding.html" target="_blank">
+						<img class="project-img" src="build/img/wedding.PNG" alt="Great-Wedding">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Wedding App</strong>
+					</h2>
+					<a href="https://btedu.co/greatwedding.html" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://btedu.co/greatwedding.html" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Memorial event with album, booking and taxi api </p>
+					<ul class="tech-list">
+						<li>Html</li>
+						<li>Css</li>
+						<li>Bootstrap</li>
+						<li>Javascript</li>
+						<li>Siteground</li>
+						<li>Uber api</li>
+						<li>Instagram api</li>
+						<li>google calendar api</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<hr>
+			<div class="project-div">
+				<div class="img-div">
+					<a href="https://852.ie/" target="_blank">
+						<img class="project-img" src="build/img/852.PNG" alt="forum">
+					</a>
+				</div>
+				<div class="project-details">
+					<h2 class="project-title">
+						<strong>Forum</strong>
+					</h2>
+					<a href="https://852.ie/" target="_blank">
+						<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="https://852.ie/" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+					</a>
+					<p>Forum with Wordpress </p>
+					<ul class="tech-list">
+						<li>Wordpress</li>
+						<li>Php</li>
+						<li>Wordpress plugins</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
 			<div class="project-div">
 				<div class="img-div">
 					<a href="https://tetris-react-game.netlify.com/" target="_blank">
@@ -345,6 +468,7 @@
 		<div class="section-container">
 			<h2 class="section-title">Say Hello</h2>
 			<p>Want to collaborate? Drop me a message!</p>
+
 			<div class="form">
 				<form method="POST" action="https://formspree.io/kieffwong@gmail.com">
 					<div class="form-group">
@@ -380,6 +504,10 @@
 		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="build/js/jquery.waypoints.min.js"></script>
 	<script src="build/js/main.js"></script>
+	
+	
+	
+ 
 </body>
 
 </html>
